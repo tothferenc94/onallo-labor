@@ -17,14 +17,14 @@ export default class App extends Component {
         <Scene key='root'>
           <Scene
             key='fokepernyo'
-            component={LoginScreen}
+            component={ LoginScreen }
             title='Bejelentkezés'
             hideNavBar='true'
             initial
           />
           <Scene
             key='eredmenyek'
-            component={ResultsFeed}
+            component={ ResultsFeed }
             title='Eredmények'
             renderRightButton={ <MyMenu/> }
           />
