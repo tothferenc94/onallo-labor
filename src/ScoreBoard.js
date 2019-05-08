@@ -1,7 +1,20 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { getResults } from './FootballApi';
+
+this.state = {
+    dataSource: null
+}
 
 export default class ScoreBoard extends Component {
+    componentDidMount(){
+    getResults("2019-04-16").then((result) => {
+            alert(JSON.stringify(result))
+        }).catch((err) => {
+            alert("Hiba!")
+        });
+    }
+
     render(){
         return(
             <View style={ styles.mainStyle }>

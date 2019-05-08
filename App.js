@@ -4,6 +4,7 @@ import ResultsFeed from './src/ResultsFeed';
 import LoginScreen from './src/LoginScreen';
 import { Router, Scene } from 'react-native-router-flux';
 import MyMenu from './src/MyMenu';
+import UserData from './src/UserData';
 
 export default class App extends Component {
 
@@ -24,7 +25,7 @@ export default class App extends Component {
           />
           <Scene
             key='eredmenyek'
-            component={ ResultsFeed }
+            component={ UserData }
             title='Eredmények'
             renderRightButton={ <MyMenu/> }
           />
